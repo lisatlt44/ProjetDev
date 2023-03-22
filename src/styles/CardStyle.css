@@ -44,7 +44,7 @@
 }
 
 .card .card-footer button:hover{
-    background-color: #333;
+    background-color: var(--primary-color);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px;
     transform: translateY(-2px);
     color: var(--secondary-color);
