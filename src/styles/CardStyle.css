@@ -34,18 +34,20 @@
     padding: 15px 30px;
     background-color: var(--secondary-color);
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 3.5px 15px 0px;
     border-radius: 5px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: all 200ms ease-in-out;
+    transition: all 400ms ease-out;
     cursor: pointer;
     color: #f1f1f1;
 }
 
 .card .card-footer button:hover{
     background-color: var(--primary-color);
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 8px;
-    transform: translateY(-2px);
+    border: 0.5px solid var(--secondary-color);
+    border-width: thin;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    transform: translateY(0px);
     color: var(--secondary-color);
 }

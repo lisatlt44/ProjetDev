@@ -5,7 +5,7 @@ function Header () {
 
     <header>
       <div className='logo'>
-        <img src='/assets/img/LogoUberEats.png' height={30} />
+        <a href='/'><img src='/assets/img/LogoUberEats.png' height={30} /></a>
       </div>
       <nav className='menu'>
         <ul>
