@@ -3,8 +3,8 @@ import '../styles/CardStyle.css'
 
 const IMAGE_URL = 'http://localhost:1337'
 
-function Card ({ restaurant }) {
-  const attributes = restaurant.attributes
+function Card ({ item, mode }) {
+  const attributes = item.attributes
   let imageUrl = ''
   if (attributes.image) {
     imageUrl = IMAGE_URL + attributes.image.data.attributes.url
@@ -15,9 +15,8 @@ function Card ({ restaurant }) {
   const navigate = useNavigate()
 
   const handleClick = () => {
-    navigate('/restaurants/' + restaurant.id)
+    navigate('/restaurants/' + item.id)
   }
-
   return (
     <div className='card'>
       <div className='card-header'>

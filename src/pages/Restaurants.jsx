@@ -1,5 +1,5 @@
-import axios from 'axios'
 import { useEffect, useState } from 'react'
+import axios from 'axios'
 import Card from '../components/Card.jsx'
 
 function Restaurants () {
@@ -35,7 +35,7 @@ function Restaurants () {
           // On retourne pour chaque restaurant une Card pour afficher son contenu
           restaurants && restaurants.map(restaurant => {
             return (
-              <Card key={restaurant.id} restaurant={restaurant} />
+              <Card key={restaurant.id} item={restaurant} />
             )
           })
         }
